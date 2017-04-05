@@ -429,13 +429,13 @@ class Service
     private function parseTradeUpdateNotification(array $notification)
     {
         $trade = new \stdClass();
-        $trade->code = 0;
-        $trade->mch_id     = $notification['mch_id'];
-        $trade->trade_type = $notification['trade_type']; // 如: pay.weixin.native
-        $trade->trans_id   = $notification['transaction_id']; // 兴业交易号
-        $trade->order_no   = $notification['out_trade_no'];
-        $trade->total_fee  = $notification['total_fee'];
-        $trade->paid_at    = $notification['time_end']; // 兴业银行的支付完成时间:20091227091010
+        $trade->code      = 0;
+        $trade->mchId     = $notification['mch_id'];
+        $trade->tradeType = $notification['trade_type']; // 如: pay.weixin.native
+        $trade->transId   = $notification['transaction_id']; // 兴业交易号
+        $trade->orderNo   = $notification['out_trade_no'];
+        $trade->fee       = $notification['total_fee'];
+        $trade->paidAt    = $notification['time_end']; // 兴业银行的支付完成时间:20091227091010
         return $trade;
     }
 }
