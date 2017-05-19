@@ -1,6 +1,6 @@
 {
   "name": "ouarea/industrial-bank-pay",
-  "version": "v1.1.1",
+  "version": "v1.2.1",
   "description": "Pay service implementation with industrial bank as backend",
   "license": "proprietary",
   "type": "library",

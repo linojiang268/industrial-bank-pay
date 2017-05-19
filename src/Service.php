@@ -100,7 +100,7 @@ class Service
         // 接口类型：pay.weixin.native
         $params['service']          = 'unified.trade.pay';
         // 是否支持信用卡，1为不支持，0为支持
-        $params['limit_credit_pay'] = '1';
+        $params['limit_credit_pay'] = '0';
         // 通知地址，必填项，接收威富通通知的URL，需给绝对路径，255字符内格式如:http://wap.tenpay.com/tenpay.asp
         $params['notify_url']       = $this->notifyUrl;
         // $params['device_info']      = ''; // 终端设备号
