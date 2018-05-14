@@ -94,7 +94,7 @@ class Service
         $params['mch_id']           = $this->merchantId;
         $params['version']          = $this->version;
         $params['charset']          = 'UTF-8';
-        $params['sign_type']        = 'MD5';
+        // $params['sign_type']        = 'MD5';  // 银联限制不允许使用MD5方式
         // 随机字符串，必填项，不长于 32 位
         $params['nonce_str']        = $this->genNonceStr();
         // 接口类型：pay.weixin.native
